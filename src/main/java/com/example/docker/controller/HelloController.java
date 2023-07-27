@@ -1,18 +1,12 @@
 package com.example.docker.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-public class controller {
-  
   @RestController
-  @RequestMapping(value = "/")
   public class HelloController {
-    
-    @GetMapping
+    @GetMapping(value = "/")
     public String hello(){
       return "Hello World!!";
     }
   }
-}
